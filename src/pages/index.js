@@ -1,13 +1,11 @@
 import * as React from "react"
 import NutritionInfo from "./nutritionInfo"
 import Benefits from "./benefits"
-import styled from "styled-components";
 import productImage from "../images/Immunoten.jpg";
-// styles
 
+// styles
 const PageStyles = {
   color: "#232129",
-  padding: 20,
   fontFamily: "-apple-system, Roboto, sans-serif, serif"
 }
 
@@ -20,8 +18,7 @@ const containerStyle = {
 
 const productPageStyle = {
   display: "flex",
-  flexDirection: "column",
-  padding: "40px"
+  flexDirection: "column"
 }
 
 const imageWrapperStyle = {

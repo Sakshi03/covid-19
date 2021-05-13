@@ -2,11 +2,22 @@ import * as React from "react";
 import {PieChart} from "react-minimal-pie-chart";
 
 import { __centerLabel, __chartContainer } from "../PieChartStyle";
+import styled from "styled-components";
 
-const chartContainerStyles = {
-  margin: "auto 0",
-  width: "20%"
+const ChartContainer = styled.div`
+margin: auto 0;
+width: 20%;
+@media only screen and (max-width: 768px) {
+  width: 35%;
 }
+`
+// const chartContainerStyles = {
+//   margin: "auto 0",
+//   width: "20%",
+//   "@media only screen and (max-width: 767px)": {
+//     width: "35%"
+//   }
+// }
 
 const centerLabelStyles = {
   textAnchor: "middle",
@@ -37,9 +48,9 @@ const Chart = (props) => {
       };
 
   return (
-    <div style={chartContainerStyles}>
+    <ChartContainer>
       <PieChart {...chartProps} />
-    </div>
+    </ChartContainer>
   );
 };
 
